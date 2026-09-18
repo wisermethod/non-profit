@@ -21,7 +21,7 @@ This plugin loads alongside `wiser` and may assume it is present. It references 
 
 ## Write mode
 
-In use this root is read-only. Nothing is written under this root during a session that uses it, and output lands in the working folder the session attached, in the directories that folder's own `AGENTS.md` declares. Authoring this root is separate work, planned as a Playbook, and is entered by the operator's authorization for a named phase and a named target. An Active Playbook is the record of that authorization and never the grant.
+In use this root is read-only. Nothing is written under this root during a session that uses it, and output lands in the working folder the session attached, in the directories that folder's own `AGENTS.md` declares. Authoring this root is separate work, entered by the operator's authorization for a named phase and a named target, per `wiser/AGENTS.md` Workspace Model. A Playbook, a ledger row or the operator's own instruction may record that authorization; none of them is the grant.
 
 A session that has loaded this constitution and the base plugin's refuses ordinary writes to both.
 
@@ -33,8 +33,6 @@ What may be written here is governed by this heading and by `wiser/AGENTS.md` Wr
 |-----------|-------|
 | `skills/` | This plugin's skills |
 | `experts/` | This plugin's experts |
-| `tools/` | This plugin's tools |
-| `connectors/` | This plugin's connectors |
 
 Family placement follows `wiser/standards/primitives.md`. This plugin ships no `gateway/`; the base plugin alone ships one, and a connector that lands in `connectors/` loads through that gateway's repeated `--connectors` flag, per `wiser/gateway/SETUP.md`.
 
