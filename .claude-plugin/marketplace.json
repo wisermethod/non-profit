@@ -1,0 +1,11 @@
+{
+  "name": "wiser-method-non-profit",
+  "description": "A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned.",
+  "plugins": [
+    {
+      "name": "non-profit",
+      "source": "./",
+      "description": "A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned."
+    }
+  ]
+}

@@ -1,19 +1,49 @@
 ---
 root: non-profit
+layout: 1
 ---
 
 # Non Profit
 
-A WISER plugin for not-for-profits, schools, and other public entities: grant writing, fundraising, and the domain skills and experts that work requires.
+A WISER domain plugin. This file is this root's constitution. The chain starts here: load it before the first read or write under this root.
 
-This root is a placeholder. It is empty and unscoped as of 2026-09-03, and the plugin has not been designed.
+A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned.
 
-## Do not author here yet
+## What this root is
 
-Do not add skills, experts, tools, connectors, or standards to this root on your own initiative. The plugin's scope, its boundaries, and what it refuses to do are decisions that have not been made, and a public-entity plugin built ahead of those decisions is worse than an empty one.
+An authoring tree, not a working folder. Nothing here is anyone's work product; everything here is the capability that such work uses. Output belongs in the working folder a session attaches, never in this root.
 
-A build starts as a Playbook in `WISER Plugins/zBuilds/playbooks/`, authored by the Playbook Author skill. When that Playbook exists and a human has set it Active, this file is replaced by the real constitution from `zBuilds/templates/repo-scaffold/AGENTS.md.template`.
+This plugin carries no user-root `type:`, no Provides block, and no Onboarding keys.
+
+## Composition
+
+This plugin loads alongside `wiser` and may assume it is present. It references `wiser` primitives and standards rather than duplicating them, per `wiser/AGENTS.md` Precedence and routing. Copying a `wiser` primitive into this tree to remove the dependency is the defect; referencing one is the pattern. Nothing in `wiser` references this plugin.
+
+## Write mode
+
+In use this root is read-only. Nothing is written under this root during a session that uses it, and output lands in the working folder the session attached, in the directories that folder's own `AGENTS.md` declares. Authoring this root is separate work, planned as a Playbook, and is entered by the operator's authorization for a named phase and a named target. An Active Playbook is the record of that authorization and never the grant.
+
+A session that has loaded this constitution and the base plugin's refuses ordinary writes to both.
+
+What may be written here is governed by this heading and by `wiser/AGENTS.md` Writes, Irreversibles, Workspace Model, and Working under this root.
+
+## Families
+
+| Directory | Holds |
+|-----------|-------|
+| `skills/` | This plugin's skills |
+| `experts/` | This plugin's experts |
+| `tools/` | This plugin's tools |
+| `connectors/` | This plugin's connectors |
+
+Family placement follows `wiser/standards/primitives.md`. This plugin ships no `gateway/`; the base plugin alone ships one, and a connector that lands in `connectors/` loads through that gateway's repeated `--connectors` flag, per `wiser/gateway/SETUP.md`.
+
+Each family directory carries its own `AGENTS.md` index. An empty index is still an index.
 
 ## Standing constraint
 
 This plugin loads alongside `wiser` and may assume it is present. It references `wiser` primitives rather than duplicating them. Copying a `wiser` writing, playbook, or connecting primitive into this tree to remove the dependency is a defect.
+
+## Layout
+
+This root's layout is governed by `wiser/standards/plugin-root.md`. That standard's C1 owns the `layout:` stamp: the current tree version, a bare nonnegative integer. `wiser/skills/Onboard Plugin Root/` writes it last, only once every applicable obligation other than the stamp itself scores present or N/A. A stamp written before that would advertise a conformance nothing had earned, which is why an unstamped tree reads as not current rather than as clean.
