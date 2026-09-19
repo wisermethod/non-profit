@@ -38,10 +38,6 @@ Family placement follows `wiser/standards/primitives.md`. This plugin ships no `
 
 Each family directory carries its own `AGENTS.md` index. An empty index is still an index.
 
-## Standing constraint
-
-This plugin loads alongside `wiser` and may assume it is present. It references `wiser` primitives rather than duplicating them. Copying a `wiser` writing, playbook, or connecting primitive into this tree to remove the dependency is a defect.
-
 ## Layout
 
 This root's layout is governed by `wiser/standards/plugin-root.md`. That standard's C1 owns the `layout:` stamp: the current tree version, a bare nonnegative integer. `wiser/skills/Onboard Plugin Root/` writes it last, only once every applicable obligation other than the stamp itself scores present or N/A. A stamp written before that would advertise a conformance nothing had earned, which is why an unstamped tree reads as not current rather than as clean.
