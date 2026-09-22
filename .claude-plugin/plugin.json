@@ -1,6 +1,5 @@
 {
   "name": "non-profit",
-  "version": "0.1.0",
   "displayName": "Non Profit",
   "description": "A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned."
 }

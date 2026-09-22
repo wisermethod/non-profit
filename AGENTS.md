@@ -1,6 +1,6 @@
 ---
 root: non-profit
-layout: 2
+layout: 1
 ---
 
 # Non Profit
