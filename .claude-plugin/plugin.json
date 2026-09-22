@@ -1,5 +1,9 @@
 {
   "name": "non-profit",
   "displayName": "Non Profit",
-  "description": "A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned."
+  "description": "A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned.",
+  "author": {
+    "name": "WiserMind.ai",
+    "url": "https://wisermind.ai"
+  }
 }
