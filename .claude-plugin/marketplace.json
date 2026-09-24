@@ -1,8 +1,8 @@
 {
   "name": "wiser-method-non-profit",
   "owner": {
-    "name": "WiserMind.ai",
-    "url": "https://wisermind.ai"
+    "name": "Wiser Memory",
+    "url": "https://wisermemory.com"
   },
   "description": "A WISER plugin for non profit organizations: the grant writing, fundraising and operating work they run on. It ships no skills or experts yet; a Grant Expert and its related skills are the first planned.",
   "plugins": [
